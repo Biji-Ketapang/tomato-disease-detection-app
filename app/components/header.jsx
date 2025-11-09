@@ -5,8 +5,8 @@ import { ThemeSwitch } from "@/components/ui/theme";
 
 const menuItems = [
   { name: "Home", href: "/" },
-  { name: "EDA", href: "/eda" },
-  { name: "Predict", href: "/predict" },
+  { name: "Disease", href: "/disease" },
+  { name: "Classification", href: "/clasify" },
 ];
 
 export default function Header() {
@@ -27,7 +27,7 @@ export default function Header() {
               >
                 <img
                   className="text-foreground h-10 w-auto transition-transform duration-300 ease-in-out hover:scale-110"
-                  src="logo/logo2_removed.png"
+                  src="logo/detomato-h.png"
                   alt="Logo Rego Omah"
                 />
               </NavLink>
