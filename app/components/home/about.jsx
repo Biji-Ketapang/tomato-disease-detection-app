@@ -4,7 +4,7 @@ export default function About() {
       <div className="mx-auto max-w-5xl px-6">
         <div className="grid gap-6 md:grid-cols-2 md:gap-12">
           <div>
-            <h2 className="text-4xl font-medium mb-8">Detomato</h2>
+            <h2 className="text-4xl font-medium mb-8"> </h2>
             <img
               className="text-foreground h-20 w-auto"
               src="/logo/detomato-h.png"

@@ -1,8 +1,8 @@
 import React from "react";
 import Hero from "@/components/home/hero";
 import About from "@/components/home/about";
-import Features from "@/components/home/features";
-import Team from "@/components/home/team";
+import ContentSection from "@/components/home/case-study";
+import DevelopmentBusiness from "@/components/home/business";
 import FAQs from "@/components/home/faqs";
 
 export function meta() {
@@ -21,8 +21,8 @@ export default function Home() {
     <main className="overflow-x-hidden">
       <Hero />
       <About />
-      <Features />
-      {/* <Team /> */}
+      <ContentSection />
+      <DevelopmentBusiness />
       <FAQs />
     </main>
   );

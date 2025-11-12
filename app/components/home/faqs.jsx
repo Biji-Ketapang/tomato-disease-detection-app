@@ -9,16 +9,17 @@ export default function FAQs() {
   const faqItems = [
     {
       id: "item-1",
-      question: "How does the house price prediction work?",
+      question: "How does the tomato disease detection work?",
       answer:
-        "Our system uses a machine learning model trained on rumah123.com data to estimate house prices based on features like location, size, number of rooms, and more.",
+        "Detomato uses a deep learning model trained on thousands of tomato leaf images to identify disease patterns. The system analyzes the uploaded leaf photo and predicts the disease type based on visual symptoms.",
     },
     {
       id: "item-2",
-      question: "How accurate are the predictions?",
+      question: "How accurate is the detection?",
       answer:
-        "Accuracy depends on the quality of the input. However, the model has been trained and tested with real datasets to ensure reliable price estimates.",
+        "The model achieves high accuracy through extensive training and validation on real tomato leaf datasets. While results are highly reliable, lighting conditions and image clarity can slightly affect performance.",
     },
+
     {
       id: "item-3",
       question: "Can I upload my own dataset for prediction?",
@@ -36,9 +37,12 @@ export default function FAQs() {
       question: "Where does your training data come from?",
       answer: (
         <span>
-          This model is trained on scraped data from the{" "}
-          <a className="text-sky-600 underline" href="https://www.rumah123.com">
-            rumah123.com
+          This model is trained on data from the{" "}
+          <a
+            className="text-sky-600 underline"
+            href="https://www.kaggle.com/datasets/emmarex/plantdisease"
+          >
+            kaggle.com
           </a>{" "}
           website.
         </span>
