@@ -55,18 +55,47 @@ export default function Classification() {
   };
 
   return (
-    <main className="overflow-x-hidden pb-20">
-      <Intro />
+    <main className="relative overflow-x-hidden pb-20 min-h-screen">
 
-      {!result ? (
-        <Uploader
-          onImageSelected={handleImageSelected}
-          onPredict={handlePredict}
-          loading={loading}
-        />
-      ) : (
-        <Result result={result} image={previewURL} reset={handleReset} />
-      )}
+      {/* Background full-page */}
+      <div
+        className="
+          absolute inset-0
+          bg-[url('/daun-tomat.png')]
+          bg-cover
+          bg-no-repeat
+          bg-right
+          opacity-65
+          pointer-events-none
+        "
+      />
+
+      {/* Overlay ringan seperti Hero */}
+      <div
+        className="
+          absolute inset-0
+          bg-gradient-to-r
+          from-white/5
+          via-white/5
+          to-white/5
+        "
+      />
+
+      {/* Content */}
+      <div className="relative">
+        <Intro />
+
+        {!result ? (
+          <Uploader
+            onImageSelected={handleImageSelected}
+            onPredict={handlePredict}
+            loading={loading}
+          />
+        ) : (
+          <Result result={result} image={previewURL} reset={handleReset} />
+        )}
+      </div>
+
     </main>
   );
 }
