@@ -41,7 +41,7 @@ export default function Uploader({ onImageSelected, onPredict, loading }) {
           "
         >
           <p className="text-lg font-medium">Upload or Drag & Drop Image</p>
-          <p className="text-sm text-gray-600 mt-2">
+          <p className="text-lg mt-2">
             Supported: JPG, PNG (Clear leaf photo recommended)
           </p>
 
