@@ -27,7 +27,7 @@ export default function Uploader({ onImageSelected, onPredict, loading }) {
   };
 
   return (
-    <section className="py-16">
+    <section className="py-16 pt-6">
       <div className="mx-auto max-w-xl px-6">
         {/* Upload Area */}
         <div

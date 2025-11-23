@@ -3,7 +3,7 @@ export default function Intro() {
     <section className="py-20">
       <div className="mx-auto max-w-4xl px-6 text-center">
         {/* Judul tetap di tengah */}
-        <h1 className="text-3xl md:text-4xl font-medium">
+        <h1 className="text-3xl md:text-4xl font-medium mt-20">
           Tomato Leaf Disease Classifier
         </h1>
 
