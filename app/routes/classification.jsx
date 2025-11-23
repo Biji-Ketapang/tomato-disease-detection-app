@@ -15,6 +15,45 @@ export default function Classification() {
     setResult(null);
   };
 
+  // const handlePredict = async () => {
+  //   if (!selectedImage) return;
+  //   setLoading(true);
+
+  //   try {
+  //     const formData = new FormData();
+  //     formData.append("file", selectedImage);
+
+  //     const res = await fetch(`${import.meta.env.VITE_API_URL}/predict`, {
+  //       method: "POST",
+  //       headers: {
+  //         "ngrok-skip-browser-warning": "true",
+  //       },
+  //       body: formData,
+  //     });
+
+  //     if (!res.ok) {
+  //       setResult({
+  //         label: "Error",
+  //         confidence: 0,
+  //         description: "There was a problem with your request.",
+  //       });
+  //       return;
+  //     }
+
+  //     const data = await res.json();
+  //     setResult(data);
+  //   } catch (err) {
+  //     console.error("Prediction failed:", err);
+  //     setResult({
+  //       label: "Error",
+  //       confidence: 0,
+  //       description: "Failed to reach the server.",
+  //     });
+  //   }
+
+  //   setLoading(false);
+  // };
+
   const handlePredict = async () => {
     if (!selectedImage) return;
     setLoading(true);
@@ -23,25 +62,37 @@ export default function Classification() {
       const formData = new FormData();
       formData.append("file", selectedImage);
 
-      // ---- CALL BACKEND API HERE ----
-      // ganti URL di bawah sesuai endpoint server prediction kalian
-      const response = await fetch("http://localhost:5000/predict", {
+      // 🔥 Tambahkan log untuk melihat isi FormData
+      console.log("=== FormData content ===");
+      for (let pair of formData.entries()) {
+        console.log(pair[0] + ": ", pair[1]);
+      }
+
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/predict`, {
         method: "POST",
+        headers: {
+          "ngrok-skip-browser-warning": "true",
+        },
         body: formData,
       });
 
-      const data = await response.json();
+      if (!res.ok) {
+        setResult({
+          label: "Error",
+          confidence: 0,
+          description: "There was a problem with your request.",
+        });
+        return;
+      }
 
-      // Expected response:
-      // { label: "...", confidence: 0.92, description: "..." }
-
+      const data = await res.json();
       setResult(data);
     } catch (err) {
       console.error("Prediction failed:", err);
       setResult({
         label: "Error",
         confidence: 0,
-        description: "Failed to get prediction from server.",
+        description: "Failed to reach the server.",
       });
     }
 
@@ -56,7 +107,6 @@ export default function Classification() {
 
   return (
     <main className="relative overflow-x-hidden pb-20 min-h-screen">
-
       {/* Background full-page */}
       <div
         className="
@@ -95,7 +145,6 @@ export default function Classification() {
           <Result result={result} image={previewURL} reset={handleReset} />
         )}
       </div>
-
     </main>
   );
 }

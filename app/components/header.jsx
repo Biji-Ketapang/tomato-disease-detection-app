@@ -28,7 +28,7 @@ export default function Header() {
                 <img
                   className="text-foreground h-10 w-auto transition-transform duration-300 ease-in-out hover:scale-110"
                   src="logo/detomato-h.png"
-                  alt="Logo Rego Omah"
+                  alt="Logo Detomato"
                 />
               </NavLink>
 

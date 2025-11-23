@@ -7,7 +7,7 @@ import FAQs from "@/components/home/faqs";
 
 export function meta() {
   return [
-    { title: "Rego Omah" },
+    { title: "Detomato" },
     {
       name: "description",
       content:
