@@ -2,14 +2,37 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router';
 
 export default function Disease() {
-  const [searchParams] = useSearchParams();
-  const diseaseId = searchParams.get('id') || '1';
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  // LABELS sesuai data kalian
+  const LABELS = [
+    'Bacterial_Spot',
+    'Early_Blight',
+    'Healthy',
+    'Late_Blight',
+    'Leaf_Mold',
+    'Mosaic_Virus',
+    'Septoria_Leaf_Spot',
+    'Spider_Mites',
+    'Target_Spot',
+    'Yellow_Leaf_Curl_Virus'
+  ];
+
+  const toDisplayName = (label) =>
+    label.replaceAll('_', ' ').replace(/\b\w/g, c => c.toUpperCase());
+
+  // ambil dari URL (contoh: /disease?id=Early_Blight)
+  const diseaseIdRaw = searchParams.get('id') || 'Bacterial_Spot';
+  const diseaseId = LABELS.includes(diseaseIdRaw) ? diseaseIdRaw : 'Bacterial_Spot';
+
   const [isLoading, setIsLoading] = useState(true);
   const [activeTab, setActiveTab] = useState('symptoms');
 
   // Simulate loading
   useEffect(() => {
-    setTimeout(() => setIsLoading(false), 800);
+    setIsLoading(true);
+    const t = setTimeout(() => setIsLoading(false), 500);
+    return () => clearTimeout(t);
   }, [diseaseId]);
 
   // Add styles to document only on client side
@@ -20,11 +43,6 @@ export default function Disease() {
         @keyframes spin {
           0% { transform: rotate(0deg); }
           100% { transform: rotate(360deg); }
-        }
-        
-        .action-button:hover {
-          transform: translateY(-2px);
-          box-shadow: 0 6px 16px rgba(0,0,0,0.15) !important;
         }
         
         .related-card:hover {
@@ -45,9 +63,6 @@ export default function Disease() {
           .tab-container {
             flex-direction: column;
           }
-          .action-buttons {
-            grid-template-columns: 1fr !important;
-          }
         }
       `;
       document.head.appendChild(styleSheet);
@@ -58,29 +73,197 @@ export default function Disease() {
     }
   }, []);
 
-  // DUMMY DATA - nanti diganti dengan fetch dari API
+  // DUMMY DATA (English) -> nanti ganti fetch API
+  const DISEASE_INFO = {
+    Bacterial_Spot: {
+      scientificName: "Xanthomonas spp.",
+      severity: "Moderate", // Mild, Moderate, Severe
+      image: "/daun-tomat.png",
+      symptoms:
+        "Small, dark brown to black spots (1–3 mm) appear on leaves, often surrounded by yellow halos. Spots may merge into larger necrotic areas. Severely infected leaves turn yellow, dry out, and drop prematurely. Fruits may show slightly raised brown lesions with pale margins.",
+      causes:
+        "Caused by Xanthomonas bacteria that survive on infected plant debris and seeds. Spread occurs through rain splash, contaminated tools, and plant-to-plant contact. High humidity (>85%), warm temperatures (24–30°C), and plant wounds favor infection.",
+      solutions: [
+        "Use certified disease-free seeds and seedlings",
+        "Rotate crops with non-solanaceous plants for at least 2 years",
+        "Avoid overhead irrigation; use drip irrigation instead",
+        "Remove and destroy infected plant parts",
+        "Maintain 50–60 cm spacing to improve airflow",
+        "Apply copper-based bactericides as recommended",
+        "Sanitize tools after use",
+        "Avoid working with wet plants to prevent spread"
+      ],
+      economicImpact:
+        "May reduce yield by up to 30–50% if not controlled. Control costs can reach Rp 2–3 million per hectare.",
+      relatedDiseases: ["Early Blight", "Late Blight", "Septoria Leaf Spot"]
+    },
+
+    Early_Blight: {
+      scientificName: "Alternaria solani",
+      severity: "Moderate",
+      image: "/daun-tomat.png",
+      symptoms:
+        "Concentric dark lesions (target-like rings) develop on older leaves, leading to yellowing and early defoliation.",
+      causes:
+        "A fungal infection favored by warm, humid conditions and poor field sanitation.",
+      solutions: [
+        "Remove infected leaves",
+        "Improve airflow with proper spacing",
+        "Apply recommended fungicides"
+      ],
+      economicImpact:
+        "Reduces photosynthesis and can lower yield when severe.",
+      relatedDiseases: ["Late Blight", "Septoria Leaf Spot"]
+    },
+
+    Healthy: {
+      scientificName: "-",
+      severity: "Mild",
+      image: "/daun-tomat.png",
+      symptoms:
+        "No visible disease symptoms detected.",
+      causes:
+        "The plant appears healthy.",
+      solutions: [
+        "Maintain balanced nutrition and watering",
+        "Continue routine monitoring"
+      ],
+      economicImpact:
+        "No economic loss indicated.",
+      relatedDiseases: []
+    },
+
+    Late_Blight: {
+      scientificName: "Phytophthora infestans",
+      severity: "Severe",
+      image: "/daun-tomat.png",
+      symptoms:
+        "Water-soaked lesions rapidly expand on leaves and stems. White mold may appear on the underside under high humidity.",
+      causes:
+        "An oomycete pathogen spread by wind and rain. It thrives in cool and wet conditions.",
+      solutions: [
+        "Remove infected plants immediately",
+        "Use resistant varieties if available",
+        "Apply systemic fungicides early"
+      ],
+      economicImpact:
+        "Can cause rapid crop failure if not treated early.",
+      relatedDiseases: ["Early Blight"]
+    },
+
+    Leaf_Mold: {
+      scientificName: "Passalora fulva",
+      severity: "Moderate",
+      image: "/daun-tomat.png",
+      symptoms:
+        "Yellow patches on upper leaf surfaces with olive-green mold underneath.",
+      causes:
+        "Fungus favored by high humidity and poor ventilation.",
+      solutions: [
+        "Reduce humidity and improve airflow",
+        "Remove infected leaves",
+        "Apply fungicides if needed"
+      ],
+      economicImpact:
+        "Severe infections can reduce yield significantly.",
+      relatedDiseases: []
+    },
+
+    Mosaic_Virus: {
+      scientificName: "Tomato mosaic virus (ToMV)",
+      severity: "Moderate",
+      image: "/daun-tomat.png",
+      symptoms:
+        "Light and dark green mosaic patterns appear, with leaf distortion and stunted growth.",
+      causes:
+        "Virus spread through contact, tools, and infected seeds.",
+      solutions: [
+        "Remove infected plants",
+        "Disinfect tools",
+        "Use virus-free seeds"
+      ],
+      economicImpact:
+        "Yield reduction depends on the infection stage.",
+      relatedDiseases: []
+    },
+
+    Septoria_Leaf_Spot: {
+      scientificName: "Septoria lycopersici",
+      severity: "Moderate",
+      image: "/daun-tomat.png",
+      symptoms:
+        "Small circular spots with gray centers and dark edges, starting from lower leaves.",
+      causes:
+        "Fungal disease spread by splashing water and humid weather.",
+      solutions: [
+        "Remove infected leaves",
+        "Avoid overhead watering",
+        "Apply protective fungicides"
+      ],
+      economicImpact:
+        "Heavy defoliation can reduce yield.",
+      relatedDiseases: ["Early Blight"]
+    },
+
+    Spider_Mites: {
+      scientificName: "Tetranychus urticae",
+      severity: "Moderate",
+      image: "/daun-tomat.png",
+      symptoms:
+        "Yellow stippling on leaves with fine webbing underneath. Leaves can bronze and dry.",
+      causes:
+        "Mite infestation favored by hot, dry environments.",
+      solutions: [
+        "Increase humidity if possible",
+        "Use acaricides when needed",
+        "Introduce natural predators"
+      ],
+      economicImpact:
+        "Severe infestations weaken plants and lower yield.",
+      relatedDiseases: []
+    },
+
+    Target_Spot: {
+      scientificName: "Corynespora cassiicola",
+      severity: "Moderate",
+      image: "/daun-tomat.png",
+      symptoms:
+        "Brown lesions with concentric rings on leaves and stems.",
+      causes:
+        "Fungal pathogen spread by wind/rain, thriving in humid conditions.",
+      solutions: [
+        "Remove infected leaves",
+        "Improve airflow",
+        "Apply fungicides"
+      ],
+      economicImpact:
+        "Can reduce yield due to defoliation.",
+      relatedDiseases: []
+    },
+
+    Yellow_Leaf_Curl_Virus: {
+      scientificName: "Tomato yellow leaf curl virus (TYLCV)",
+      severity: "Severe",
+      image: "/daun-tomat.png",
+      symptoms:
+        "Leaves curl upward, become yellow and thickened, and plants are stunted.",
+      causes:
+        "Virus transmitted primarily by whiteflies.",
+      solutions: [
+        "Control whiteflies",
+        "Remove infected plants",
+        "Use resistant varieties"
+      ],
+      economicImpact:
+        "Often causes major yield losses.",
+      relatedDiseases: []
+    }
+  };
+
   const diseaseData = {
     id: diseaseId,
-    name: "Bacterial Spot",
-    scientificName: "Xanthomonas spp.",
-    severity: "Moderate", // Mild, Moderate, Severe
-    image: "/daun-tomat.png",
-    gallery: ["/daun-tomat.png", "/daun-tomat.png", "/daun-tomat.png"],
-    symptoms: "Muncul bercak-bercak kecil berwarna coklat kehitaman pada daun dengan diameter 1-3 mm. Bercak dikelilingi oleh halo kuning yang jelas. Seiring perkembangan penyakit, bercak dapat menyatu membentuk area nekrotik yang lebih besar. Daun yang terinfeksi parah akan menguning, mengering, dan akhirnya gugur prematur. Pada buah, muncul bintik-bintik coklat yang sedikit menonjol dengan tepi putih.",
-    causes: "Disebabkan oleh bakteri Xanthomonas spp. yang dapat bertahan hidup di sisa tanaman terinfeksi dan benih. Bakteri menyebar melalui percikan air hujan, alat pertanian yang terkontaminasi, dan kontak langsung antar tanaman. Kondisi lingkungan yang mendukung perkembangan penyakit meliputi kelembaban tinggi (>85%), suhu hangat (24-30°C), dan adanya luka pada tanaman.",
-    solutions: [
-      "Gunakan benih dan bibit bersertifikat yang bebas penyakit",
-      "Terapkan rotasi tanaman dengan tanaman non-solanaceae minimal 2 tahun",
-      "Hindari penyiraman dari atas yang membasahi daun, gunakan sistem irigasi tetes",
-      "Buang dan musnahkan bagian tanaman yang terinfeksi dengan cara dibakar",
-      "Jaga jarak tanam minimal 50-60 cm untuk sirkulasi udara yang baik",
-      "Aplikasi bakterisida berbahan tembaga (copper hydroxide) sesuai dosis anjuran",
-      "Lakukan sanitasi alat pertanian dengan desinfektan setelah digunakan",
-      "Hindari bekerja di lahan saat tanaman basah untuk mencegah penyebaran"
-    ],
-    economicImpact: "Dapat menyebabkan kerugian hasil panen hingga 30-50% jika tidak ditangani dengan baik. Biaya pengendalian mencapai Rp 2-3 juta per hektar.",
-    affectedCrops: ["Tomat", "Cabai", "Paprika", "Terong"],
-    relatedDiseases: ["Early Blight", "Late Blight", "Septoria Leaf Spot"]
+    name: toDisplayName(diseaseId),
+    ...DISEASE_INFO[diseaseId]
   };
 
   const getSeverityColor = (severity) => {
@@ -96,7 +279,7 @@ export default function Disease() {
     return (
       <div style={styles.loadingContainer}>
         <div style={styles.spinner}></div>
-        <p style={styles.loadingText}>Memuat informasi penyakit...</p>
+        <p style={styles.loadingText}>Loading disease information...</p>
       </div>
     );
   }
@@ -117,7 +300,9 @@ export default function Disease() {
         <div style={styles.heroSection}>
           <div style={styles.heroContent}>
             <div style={styles.titleSection}>
-              <h1 style={styles.mainTitle} className="main-title">{diseaseData.name}</h1>
+              <h1 style={styles.mainTitle} className="main-title">
+                {diseaseData.name}
+              </h1>
               <p style={styles.scientificName}>{diseaseData.scientificName}</p>
               <div style={{
                 ...styles.severityBadge,
@@ -133,7 +318,7 @@ export default function Disease() {
 
         {/* Main Content */}
         <div style={styles.mainContent} className="main-content">
-          {/* Image Gallery */}
+          {/* Image Section */}
           <div style={styles.imageSection}>
             <div style={styles.mainImageContainer}>
               <img 
@@ -142,52 +327,50 @@ export default function Disease() {
                 style={styles.mainImage}
               />
             </div>
-            
-            {/* Quick Actions */}
-            <div style={styles.actionButtons} className="action-buttons">
-              <button style={styles.actionButton} className="action-button">
-                📥 Download Info
-              </button>
-              <button style={styles.actionButton} className="action-button">
-                🔗 Share
-              </button>
-              <button style={styles.actionButton} className="action-button">
-                🖨️ Print
-              </button>
-            </div>
-
-            {/* Affected Crops */}
-            <div style={styles.affectedCard}>
-              <h3 style={styles.affectedTitle}>🌱 Tanaman Terpengaruh</h3>
-              <div style={styles.cropTags}>
-                {diseaseData.affectedCrops.map((crop, idx) => (
-                  <span key={idx} style={styles.cropTag}>{crop}</span>
-                ))}
-              </div>
-            </div>
+            {/* ✅ Removed Quick Actions & Affected Crops */}
           </div>
 
           {/* Details Section */}
           <div style={styles.detailsSection}>
+            {/* Disease Picker */}
+            <div style={styles.pickerCard}>
+              <label style={styles.pickerLabel}>Choose Disease</label>
+              <select
+                value={diseaseId}
+                onChange={(e) => {
+                  const next = e.target.value;
+                  setSearchParams({ id: next });
+                  setActiveTab('symptoms');
+                }}
+                style={styles.pickerSelect}
+              >
+                {LABELS.map((lab) => (
+                  <option key={lab} value={lab}>
+                    {toDisplayName(lab)}
+                  </option>
+                ))}
+              </select>
+            </div>
+
             {/* Tab Navigation */}
             <div style={styles.tabContainer} className="tab-container">
               <button 
                 style={{...styles.tab, ...(activeTab === 'symptoms' ? styles.activeTab : {})}}
                 onClick={() => setActiveTab('symptoms')}
               >
-                🔍 Gejala
+                🔍 Symptoms
               </button>
               <button 
                 style={{...styles.tab, ...(activeTab === 'causes' ? styles.activeTab : {})}}
                 onClick={() => setActiveTab('causes')}
               >
-                ⚠️ Penyebab
+                ⚠️ Causes
               </button>
               <button 
                 style={{...styles.tab, ...(activeTab === 'solutions' ? styles.activeTab : {})}}
                 onClick={() => setActiveTab('solutions')}
               >
-                💡 Solusi
+                💡 Solutions
               </button>
             </div>
 
@@ -195,21 +378,21 @@ export default function Disease() {
             <div style={styles.tabContent}>
               {activeTab === 'symptoms' && (
                 <div style={styles.contentCard}>
-                  <h2 style={styles.contentTitle}>Gejala Penyakit</h2>
+                  <h2 style={styles.contentTitle}>Disease Symptoms</h2>
                   <p style={styles.contentText}>{diseaseData.symptoms}</p>
                 </div>
               )}
 
               {activeTab === 'causes' && (
                 <div style={styles.contentCard}>
-                  <h2 style={styles.contentTitle}>Penyebab Penyakit</h2>
+                  <h2 style={styles.contentTitle}>Disease Causes</h2>
                   <p style={styles.contentText}>{diseaseData.causes}</p>
                 </div>
               )}
 
               {activeTab === 'solutions' && (
                 <div style={styles.contentCard}>
-                  <h2 style={styles.contentTitle}>Cara Pengendalian</h2>
+                  <h2 style={styles.contentTitle}>Control & Treatment</h2>
                   <ul style={styles.solutionList}>
                     {diseaseData.solutions.map((solution, idx) => (
                       <li key={idx} style={styles.solutionItem}>
@@ -226,23 +409,26 @@ export default function Disease() {
             <div style={styles.alertBox}>
               <div style={styles.alertIcon}>💰</div>
               <div>
-                <h4 style={styles.alertTitle}>Dampak Ekonomi</h4>
+                <h4 style={styles.alertTitle}>Economic Impact</h4>
                 <p style={styles.alertText}>{diseaseData.economicImpact}</p>
               </div>
             </div>
 
             {/* Related Diseases */}
-            <div style={styles.relatedSection}>
-              <h3 style={styles.relatedTitle}>Penyakit Terkait</h3>
-              <div style={styles.relatedGrid}>
-                {diseaseData.relatedDiseases.map((disease, idx) => (
-                  <div key={idx} style={styles.relatedCard} className="related-card">
-                    <span style={styles.relatedIcon}>🍃</span>
-                    <span style={styles.relatedName}>{disease}</span>
-                  </div>
-                ))}
+            {!!diseaseData.relatedDiseases?.length && (
+              <div style={styles.relatedSection}>
+                <h3 style={styles.relatedTitle}>Related Diseases</h3>
+                <div style={styles.relatedGrid}>
+                  {diseaseData.relatedDiseases.map((d, idx) => (
+                    <div key={idx} style={styles.relatedCard} className="related-card">
+                      <span style={styles.relatedIcon}>🍃</span>
+                      <span style={styles.relatedName}>{d}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
+
           </div>
         </div>
       </div>
@@ -360,47 +546,33 @@ const styles = {
     objectFit: 'cover',
     display: 'block',
   },
-  actionButtons: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gap: '10px',
-  },
-  actionButton: {
-    padding: '12px',
+
+  // Picker styles
+  pickerCard: {
     backgroundColor: 'white',
-    border: '2px solid #e0e0e0',
-    borderRadius: '10px',
-    fontSize: '13px',
-    fontWeight: '600',
-    cursor: 'pointer',
-    transition: 'all 0.3s',
-    color: '#333',
-  },
-  affectedCard: {
-    backgroundColor: 'white',
-    padding: '20px',
+    padding: '16px 18px',
     borderRadius: '12px',
     boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-  },
-  affectedTitle: {
-    margin: '0 0 15px 0',
-    fontSize: '16px',
-    color: '#2d5016',
-    fontWeight: 'bold',
-  },
-  cropTags: {
     display: 'flex',
-    flexWrap: 'wrap',
-    gap: '8px',
+    alignItems: 'center',
+    gap: '12px',
   },
-  cropTag: {
-    backgroundColor: '#e8f5e9',
+  pickerLabel: {
+    fontSize: '14px',
+    fontWeight: '700',
     color: '#2d5016',
-    padding: '6px 12px',
-    borderRadius: '20px',
-    fontSize: '13px',
-    fontWeight: '500',
+    minWidth: '120px',
   },
+  pickerSelect: {
+    flex: 1,
+    border: '2px solid #e0e0e0',
+    borderRadius: '8px',
+    padding: '10px 12px',
+    fontSize: '14px',
+    outline: 'none',
+    cursor: 'pointer',
+  },
+
   detailsSection: {
     display: 'flex',
     flexDirection: 'column',
