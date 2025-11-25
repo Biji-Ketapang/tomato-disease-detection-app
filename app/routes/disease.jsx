@@ -78,7 +78,7 @@ export default function Disease() {
     Bacterial_Spot: {
       scientificName: "Xanthomonas spp.",
       severity: "Moderate", // Mild, Moderate, Severe
-      image: "/daun-tomat.png",
+      image: "/bacterial-spot.jpg",
       symptoms:
         "Small, dark brown to black spots (1–3 mm) appear on leaves, often surrounded by yellow halos. Spots may merge into larger necrotic areas. Severely infected leaves turn yellow, dry out, and drop prematurely. Fruits may show slightly raised brown lesions with pale margins.",
       causes:
@@ -93,15 +93,13 @@ export default function Disease() {
         "Sanitize tools after use",
         "Avoid working with wet plants to prevent spread"
       ],
-      economicImpact:
-        "May reduce yield by up to 30–50% if not controlled. Control costs can reach Rp 2–3 million per hectare.",
       relatedDiseases: ["Early Blight", "Late Blight", "Septoria Leaf Spot"]
     },
 
     Early_Blight: {
       scientificName: "Alternaria solani",
       severity: "Moderate",
-      image: "/daun-tomat.png",
+      image: "/early-blight.jpg",
       symptoms:
         "Concentric dark lesions (target-like rings) develop on older leaves, leading to yellowing and early defoliation.",
       causes:
@@ -111,8 +109,6 @@ export default function Disease() {
         "Improve airflow with proper spacing",
         "Apply recommended fungicides"
       ],
-      economicImpact:
-        "Reduces photosynthesis and can lower yield when severe.",
       relatedDiseases: ["Late Blight", "Septoria Leaf Spot"]
     },
 
@@ -128,15 +124,13 @@ export default function Disease() {
         "Maintain balanced nutrition and watering",
         "Continue routine monitoring"
       ],
-      economicImpact:
-        "No economic loss indicated.",
       relatedDiseases: []
     },
 
     Late_Blight: {
       scientificName: "Phytophthora infestans",
       severity: "Severe",
-      image: "/daun-tomat.png",
+      image: "/late-blight.jpg",
       symptoms:
         "Water-soaked lesions rapidly expand on leaves and stems. White mold may appear on the underside under high humidity.",
       causes:
@@ -146,15 +140,13 @@ export default function Disease() {
         "Use resistant varieties if available",
         "Apply systemic fungicides early"
       ],
-      economicImpact:
-        "Can cause rapid crop failure if not treated early.",
       relatedDiseases: ["Early Blight"]
     },
 
     Leaf_Mold: {
       scientificName: "Passalora fulva",
       severity: "Moderate",
-      image: "/daun-tomat.png",
+      image: "/leaf-mold.jpg",
       symptoms:
         "Yellow patches on upper leaf surfaces with olive-green mold underneath.",
       causes:
@@ -164,15 +156,13 @@ export default function Disease() {
         "Remove infected leaves",
         "Apply fungicides if needed"
       ],
-      economicImpact:
-        "Severe infections can reduce yield significantly.",
       relatedDiseases: []
     },
 
     Mosaic_Virus: {
       scientificName: "Tomato mosaic virus (ToMV)",
       severity: "Moderate",
-      image: "/daun-tomat.png",
+      image: "/mosaic-virus.jpg",
       symptoms:
         "Light and dark green mosaic patterns appear, with leaf distortion and stunted growth.",
       causes:
@@ -182,15 +172,13 @@ export default function Disease() {
         "Disinfect tools",
         "Use virus-free seeds"
       ],
-      economicImpact:
-        "Yield reduction depends on the infection stage.",
       relatedDiseases: []
     },
 
     Septoria_Leaf_Spot: {
       scientificName: "Septoria lycopersici",
       severity: "Moderate",
-      image: "/daun-tomat.png",
+      image: "/septoria-leaf-spot.jpg",
       symptoms:
         "Small circular spots with gray centers and dark edges, starting from lower leaves.",
       causes:
@@ -200,15 +188,13 @@ export default function Disease() {
         "Avoid overhead watering",
         "Apply protective fungicides"
       ],
-      economicImpact:
-        "Heavy defoliation can reduce yield.",
       relatedDiseases: ["Early Blight"]
     },
 
     Spider_Mites: {
       scientificName: "Tetranychus urticae",
       severity: "Moderate",
-      image: "/daun-tomat.png",
+      image: "/spider-mites.jpg",
       symptoms:
         "Yellow stippling on leaves with fine webbing underneath. Leaves can bronze and dry.",
       causes:
@@ -218,15 +204,13 @@ export default function Disease() {
         "Use acaricides when needed",
         "Introduce natural predators"
       ],
-      economicImpact:
-        "Severe infestations weaken plants and lower yield.",
       relatedDiseases: []
     },
 
     Target_Spot: {
       scientificName: "Corynespora cassiicola",
       severity: "Moderate",
-      image: "/daun-tomat.png",
+      image: "/target-spot.jpg",
       symptoms:
         "Brown lesions with concentric rings on leaves and stems.",
       causes:
@@ -236,15 +220,13 @@ export default function Disease() {
         "Improve airflow",
         "Apply fungicides"
       ],
-      economicImpact:
-        "Can reduce yield due to defoliation.",
       relatedDiseases: []
     },
 
     Yellow_Leaf_Curl_Virus: {
       scientificName: "Tomato yellow leaf curl virus (TYLCV)",
       severity: "Severe",
-      image: "/daun-tomat.png",
+      image: "/yellow-leaf-curl-virus.jpg",
       symptoms:
         "Leaves curl upward, become yellow and thickened, and plants are stunted.",
       causes:
@@ -254,8 +236,6 @@ export default function Disease() {
         "Remove infected plants",
         "Use resistant varieties"
       ],
-      economicImpact:
-        "Often causes major yield losses.",
       relatedDiseases: []
     }
   };
@@ -327,7 +307,6 @@ export default function Disease() {
                 style={styles.mainImage}
               />
             </div>
-            {/* ✅ Removed Quick Actions & Affected Crops */}
           </div>
 
           {/* Details Section */}
@@ -405,29 +384,7 @@ export default function Disease() {
               )}
             </div>
 
-            {/* Economic Impact Alert */}
-            <div style={styles.alertBox}>
-              <div style={styles.alertIcon}>💰</div>
-              <div>
-                <h4 style={styles.alertTitle}>Economic Impact</h4>
-                <p style={styles.alertText}>{diseaseData.economicImpact}</p>
-              </div>
-            </div>
 
-            {/* Related Diseases */}
-            {!!diseaseData.relatedDiseases?.length && (
-              <div style={styles.relatedSection}>
-                <h3 style={styles.relatedTitle}>Related Diseases</h3>
-                <div style={styles.relatedGrid}>
-                  {diseaseData.relatedDiseases.map((d, idx) => (
-                    <div key={idx} style={styles.relatedCard} className="related-card">
-                      <span style={styles.relatedIcon}>🍃</span>
-                      <span style={styles.relatedName}>{d}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
 
           </div>
         </div>
@@ -655,29 +612,6 @@ const styles = {
     lineHeight: '1.7',
     color: '#444',
     flex: 1,
-  },
-  alertBox: {
-    backgroundColor: '#fff3cd',
-    border: '2px solid #ffeaa7',
-    borderRadius: '12px',
-    padding: '20px',
-    display: 'flex',
-    gap: '15px',
-  },
-  alertIcon: {
-    fontSize: '32px',
-  },
-  alertTitle: {
-    margin: '0 0 8px 0',
-    fontSize: '16px',
-    color: '#856404',
-    fontWeight: 'bold',
-  },
-  alertText: {
-    margin: 0,
-    fontSize: '14px',
-    color: '#856404',
-    lineHeight: '1.6',
   },
   relatedSection: {
     backgroundColor: 'white',
