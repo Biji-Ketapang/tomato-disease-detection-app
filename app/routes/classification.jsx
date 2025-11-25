@@ -107,27 +107,17 @@ export default function Classification() {
 
   return (
     <main className="relative overflow-x-hidden pb-20 min-h-screen">
-      {/* Background full-page */}
+      {/* Background hijau muda → putih */}
       <div
         className="
           absolute inset-0
-          bg-[url('/daun-tomat.png')]
-          bg-cover
-          bg-no-repeat
-          bg-right
-          opacity-65
-          pointer-events-none
-        "
-      />
+          bg-gradient-to-b
+          from-[#cfeac7]
+          to-white
 
-      {/* Overlay ringan seperti Hero */}
-      <div
-        className="
-          absolute inset-0
-          bg-gradient-to-r
-          from-white/5
-          via-white/5
-          to-white/5
+          dark:bg-gradient-to-b
+          dark:from-[#1a1f1a]
+          dark:to-[#1c1c1c]
         "
       />
 

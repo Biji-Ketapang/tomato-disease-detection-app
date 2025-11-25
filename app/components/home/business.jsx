@@ -39,7 +39,7 @@ export default function DevelopmentBusiness() {
               reducing crop losses.
             </p>
 
-            <Button
+            {/* <Button
               asChild
               variant="secondary"
               size="sm"
@@ -49,7 +49,7 @@ export default function DevelopmentBusiness() {
                 <span>Explore More</span>
                 <ChevronRight className="size-2" />
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>

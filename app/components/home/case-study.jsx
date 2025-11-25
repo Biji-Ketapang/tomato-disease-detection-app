@@ -44,8 +44,8 @@ export default function ContentSection() {
               The system utilizes a deep learning model specifically a
               Convolutional Neural Network (CNN) trained on thousands of
               annotated tomato leaf images. Each image represents different
-              disease classes such as Early Blight, Late Blight, Septoria Leaf
-              Spot, Leaf Mold, and healthy leaves.
+              disease classes such as Bacterial Spot, Early Blight, Healthy,
+              Late Blight, Leaf Mold.
             </p>
 
             <p className="text-muted-foreground">
