@@ -26,7 +26,7 @@ export default function DevelopmentBusiness() {
           <div className="space-y-6">
             <p>
               <strong>Detomato</strong> is not just a tomato leaf disease
-              detector — it’s a potential agritech solution designed to empower
+              detector it’s a potential agritech solution designed to empower
               farmers and agricultural institutions. Our goal is to bridge the
               gap between technology and real farming practices through
               intelligent automation.
@@ -35,7 +35,7 @@ export default function DevelopmentBusiness() {
             <p>
               With scalable AI models and future expansion plans, Detomato aims
               to build partnerships, enable smart farming solutions, and
-              contribute to sustainable agriculture — enhancing productivity and
+              contribute to sustainable agriculture enhancing productivity and
               reducing crop losses.
             </p>
 
