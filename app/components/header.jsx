@@ -7,6 +7,7 @@ const menuItems = [
   { name: "Home", href: "/" },
   { name: "Disease", href: "/disease" },
   { name: "Classification", href: "/clasify" },
+  { name: "Evaluation Model", href: "/evaluation" },
 ];
 
 export default function Header() {

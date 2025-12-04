@@ -2,6 +2,7 @@ import { useState } from "react";
 import Intro from "@/components/predict/intro";
 import Uploader from "@/components/predict/uploader";
 import Result from "@/components/predict/result";
+import ModelPerformanceVisualization from "@/components/predict/visualization/ModelPerformanceVisualization";
 
 export default function Classification() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -14,45 +15,6 @@ export default function Classification() {
     setPreviewURL(URL.createObjectURL(file));
     setResult(null);
   };
-
-  // const handlePredict = async () => {
-  //   if (!selectedImage) return;
-  //   setLoading(true);
-
-  //   try {
-  //     const formData = new FormData();
-  //     formData.append("file", selectedImage);
-
-  //     const res = await fetch(`${import.meta.env.VITE_API_URL}/predict`, {
-  //       method: "POST",
-  //       headers: {
-  //         "ngrok-skip-browser-warning": "true",
-  //       },
-  //       body: formData,
-  //     });
-
-  //     if (!res.ok) {
-  //       setResult({
-  //         label: "Error",
-  //         confidence: 0,
-  //         description: "There was a problem with your request.",
-  //       });
-  //       return;
-  //     }
-
-  //     const data = await res.json();
-  //     setResult(data);
-  //   } catch (err) {
-  //     console.error("Prediction failed:", err);
-  //     setResult({
-  //       label: "Error",
-  //       confidence: 0,
-  //       description: "Failed to reach the server.",
-  //     });
-  //   }
-
-  //   setLoading(false);
-  // };
 
   const handlePredict = async () => {
     if (!selectedImage) return;
@@ -134,6 +96,10 @@ export default function Classification() {
         ) : (
           <Result result={result} image={previewURL} reset={handleReset} />
         )}
+      </div>
+      <div>
+        {/* Visualisasi Performance Model */}
+        {/* <ModelPerformanceVisualization /> */}
       </div>
     </main>
   );

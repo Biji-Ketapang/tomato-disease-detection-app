@@ -5,5 +5,6 @@ export default [
     index("routes/home.jsx"),
     route("clasify", "routes/classification.jsx"),
     route("disease", "routes/disease.jsx"),
+    route("evaluation", "routes/evaluation.jsx"),
   ]),
 ];

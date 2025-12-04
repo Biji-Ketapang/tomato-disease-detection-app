@@ -1,0 +1,27 @@
+{
+  "class_names": [
+    "Late_Blight",
+    "Target_Spot",
+    "Early_Blight",
+    "Mosaic_Virus",
+    "Leaf_Mold",
+    "Septoria_Leaf_Spot",
+    "Spider_Mites",
+    "Yellow_Leaf_Curl_Virus",
+    "Bacterial_Spot",
+    "Healthy"
+  ],
+  "error_rates": [
+    0.1472868217054264,
+    0.11111111111111116,
+    0.10659898477157359,
+    0.09722222222222221,
+    0.0871794871794872,
+    0.08670520231213874,
+    0.03790087463556846,
+    0.02420856610800748,
+    0.01918465227817745,
+    0.0030211480362537513
+  ],
+  "title": "Error Rate per Kelas (Diurutkan dari Tertinggi)"
+}

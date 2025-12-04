@@ -1,0 +1,1004 @@
+{
+  "samples": [
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 8.664718248452274e-12,
+        "Early_Blight": 3.020178294449769e-16,
+        "Healthy": 1.9145679206803234e-27,
+        "Late_Blight": 2.8623795139912535e-18,
+        "Leaf_Mold": 6.093298795080892e-16,
+        "Mosaic_Virus": 5.6514766159745965e-18,
+        "Septoria_Leaf_Spot": 2.5177702309065375e-16,
+        "Spider_Mites": 7.876426290701066e-13,
+        "Target_Spot": 5.546897576674814e-13,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.0289004370722665e-10,
+        "Early_Blight": 1.6705733447266353e-18,
+        "Healthy": 5.267650195283168e-35,
+        "Late_Blight": 5.373999175146129e-22,
+        "Leaf_Mold": 2.5974943327500302e-24,
+        "Mosaic_Virus": 2.197122788010076e-28,
+        "Septoria_Leaf_Spot": 1.406189399205559e-26,
+        "Spider_Mites": 5.074512335529875e-21,
+        "Target_Spot": 1.3806061244990576e-20,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 4,
+      "true_label_name": "Leaf_Mold",
+      "predicted_label": 4,
+      "predicted_label_name": "Leaf_Mold",
+      "confidence": 0.9999983310699463,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.6544308891752735e-06,
+        "Early_Blight": 1.7624521633785584e-11,
+        "Healthy": 4.2340026494948025e-23,
+        "Late_Blight": 8.772670090362311e-14,
+        "Leaf_Mold": 2.4921093677694685e-16,
+        "Mosaic_Virus": 8.784162443180476e-20,
+        "Septoria_Leaf_Spot": 1.2899324339826759e-18,
+        "Spider_Mites": 6.104088724279491e-14,
+        "Target_Spot": 2.054359151326332e-14,
+        "Yellow_Leaf_Curl_Virus": 0.9999983310699463
+      }
+    },
+    {
+      "true_label": 7,
+      "true_label_name": "Spider_Mites",
+      "predicted_label": 7,
+      "predicted_label_name": "Spider_Mites",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.4865761399640576e-10,
+        "Early_Blight": 1.5679008438795883e-11,
+        "Healthy": 3.06480821332039e-20,
+        "Late_Blight": 4.10732038658157e-12,
+        "Leaf_Mold": 5.757117699234371e-11,
+        "Mosaic_Virus": 1.1000138381558541e-13,
+        "Septoria_Leaf_Spot": 3.735635390432479e-13,
+        "Spider_Mites": 3.576636764535124e-09,
+        "Target_Spot": 3.7882857961690775e-10,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 0.9999988079071045,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.132512693402532e-06,
+        "Early_Blight": 9.326341920967707e-10,
+        "Healthy": 1.1678646754769957e-15,
+        "Late_Blight": 1.176232861110904e-10,
+        "Leaf_Mold": 6.392192331006186e-10,
+        "Mosaic_Virus": 6.03462071979699e-11,
+        "Septoria_Leaf_Spot": 2.5169250017498257e-10,
+        "Spider_Mites": 5.543552106246352e-08,
+        "Target_Spot": 7.233079202251247e-08,
+        "Yellow_Leaf_Curl_Virus": 0.9999988079071045
+      }
+    },
+    {
+      "true_label": 7,
+      "true_label_name": "Spider_Mites",
+      "predicted_label": 7,
+      "predicted_label_name": "Spider_Mites",
+      "confidence": 0.9999992847442627,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 7.043425966912764e-07,
+        "Early_Blight": 1.9549420472741476e-14,
+        "Healthy": 9.181449208405316e-23,
+        "Late_Blight": 4.3027016377714025e-15,
+        "Leaf_Mold": 3.679436345745306e-17,
+        "Mosaic_Virus": 2.5267511355442273e-19,
+        "Septoria_Leaf_Spot": 7.060256519892029e-17,
+        "Spider_Mites": 5.474326504259497e-14,
+        "Target_Spot": 9.664226884031901e-13,
+        "Yellow_Leaf_Curl_Virus": 0.9999992847442627
+      }
+    },
+    {
+      "true_label": 7,
+      "true_label_name": "Spider_Mites",
+      "predicted_label": 7,
+      "predicted_label_name": "Spider_Mites",
+      "confidence": 0.9999467134475708,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 5.3334140829974785e-05,
+        "Early_Blight": 1.4656228231046953e-08,
+        "Healthy": 8.068827252866094e-17,
+        "Late_Blight": 1.7451522171807454e-10,
+        "Leaf_Mold": 1.4300756759344502e-11,
+        "Mosaic_Virus": 1.1844542816170922e-13,
+        "Septoria_Leaf_Spot": 1.5354343772984447e-13,
+        "Spider_Mites": 1.7716718092586348e-09,
+        "Target_Spot": 1.1159416724026983e-09,
+        "Yellow_Leaf_Curl_Virus": 0.9999467134475708
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 2.1429807581241356e-11,
+        "Early_Blight": 1.96988231932968e-13,
+        "Healthy": 6.805150275988403e-21,
+        "Late_Blight": 9.339040534016383e-15,
+        "Leaf_Mold": 2.490116168818446e-10,
+        "Mosaic_Virus": 1.7665660872068917e-13,
+        "Septoria_Leaf_Spot": 1.4200226823406215e-13,
+        "Spider_Mites": 9.947866974613362e-10,
+        "Target_Spot": 1.330571902657951e-10,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 6.405652008822926e-09,
+        "Early_Blight": 1.2187635304783844e-17,
+        "Healthy": 9.119495518029594e-31,
+        "Late_Blight": 7.984032575362493e-20,
+        "Leaf_Mold": 3.437424412701322e-22,
+        "Mosaic_Virus": 5.678422941387806e-26,
+        "Septoria_Leaf_Spot": 1.9371183191629402e-23,
+        "Spider_Mites": 4.1042677987319893e-19,
+        "Target_Spot": 1.9689045112451634e-18,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 2,
+      "true_label_name": "Healthy",
+      "predicted_label": 2,
+      "predicted_label_name": "Healthy",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.6505206090755564e-08,
+        "Early_Blight": 3.839113729475546e-15,
+        "Healthy": 9.704446100221374e-28,
+        "Late_Blight": 7.468538973613912e-17,
+        "Leaf_Mold": 2.0974467240746788e-19,
+        "Mosaic_Virus": 4.704391824471443e-22,
+        "Septoria_Leaf_Spot": 3.866972105339944e-20,
+        "Spider_Mites": 1.2153609892030966e-16,
+        "Target_Spot": 1.4752394324479845e-16,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 1,
+      "true_label_name": "Early_Blight",
+      "predicted_label": 1,
+      "predicted_label_name": "Early_Blight",
+      "confidence": 0.999707043170929,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 0.00029289184021763504,
+        "Early_Blight": 2.786954833577937e-10,
+        "Healthy": 1.3971398183375858e-16,
+        "Late_Blight": 1.1174961997428845e-11,
+        "Leaf_Mold": 8.608436879997683e-12,
+        "Mosaic_Virus": 8.229174957294968e-15,
+        "Septoria_Leaf_Spot": 2.5946340631577414e-09,
+        "Spider_Mites": 2.3198843887572984e-11,
+        "Target_Spot": 1.394227289175376e-09,
+        "Yellow_Leaf_Curl_Virus": 0.999707043170929
+      }
+    },
+    {
+      "true_label": 2,
+      "true_label_name": "Healthy",
+      "predicted_label": 2,
+      "predicted_label_name": "Healthy",
+      "confidence": 0.5273683071136475,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 0.47261762619018555,
+        "Early_Blight": 3.1024885061015084e-07,
+        "Healthy": 1.1409103883863736e-08,
+        "Late_Blight": 3.02533112517267e-06,
+        "Leaf_Mold": 3.838218631813106e-09,
+        "Mosaic_Virus": 5.7571937668587925e-12,
+        "Septoria_Leaf_Spot": 9.202522051054984e-06,
+        "Spider_Mites": 3.0234357240033205e-08,
+        "Target_Spot": 1.4139712902760948e-06,
+        "Yellow_Leaf_Curl_Virus": 0.5273683071136475
+      }
+    },
+    {
+      "true_label": 1,
+      "true_label_name": "Early_Blight",
+      "predicted_label": 6,
+      "predicted_label_name": "Septoria_Leaf_Spot",
+      "confidence": 0.9999996423721313,
+      "is_correct": false,
+      "probabilities": {
+        "Bacterial_Spot": 3.239950672195846e-07,
+        "Early_Blight": 3.9373449026982796e-14,
+        "Healthy": 1.2852204698255773e-23,
+        "Late_Blight": 5.040838758777269e-15,
+        "Leaf_Mold": 4.2513708588326406e-17,
+        "Mosaic_Virus": 1.97909889190942e-19,
+        "Septoria_Leaf_Spot": 3.357329568239197e-17,
+        "Spider_Mites": 1.520862225761789e-14,
+        "Target_Spot": 2.6449526705114856e-13,
+        "Yellow_Leaf_Curl_Virus": 0.9999996423721313
+      }
+    },
+    {
+      "true_label": 8,
+      "true_label_name": "Target_Spot",
+      "predicted_label": 8,
+      "predicted_label_name": "Target_Spot",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 3.540299563925542e-12,
+        "Early_Blight": 4.8352503433489115e-20,
+        "Healthy": 3.3912294461855433e-28,
+        "Late_Blight": 5.458924168816007e-20,
+        "Leaf_Mold": 7.520907075091124e-19,
+        "Mosaic_Virus": 1.1230157809602226e-20,
+        "Septoria_Leaf_Spot": 2.922290468679183e-17,
+        "Spider_Mites": 1.2845245380688604e-16,
+        "Target_Spot": 2.742822702766828e-15,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.3013550237417348e-09,
+        "Early_Blight": 3.3998699988972117e-20,
+        "Healthy": 4.596252971178453e-31,
+        "Late_Blight": 8.414502536013917e-20,
+        "Leaf_Mold": 8.303238761615351e-23,
+        "Mosaic_Virus": 1.6910527728335016e-25,
+        "Septoria_Leaf_Spot": 3.2456252908011505e-21,
+        "Spider_Mites": 1.2477976888862088e-19,
+        "Target_Spot": 3.3116399162325852e-18,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 6,
+      "true_label_name": "Septoria_Leaf_Spot",
+      "predicted_label": 6,
+      "predicted_label_name": "Septoria_Leaf_Spot",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 3.101090229051806e-08,
+        "Early_Blight": 1.7910149275116027e-12,
+        "Healthy": 1.1167296412316844e-24,
+        "Late_Blight": 1.1475301672704986e-14,
+        "Leaf_Mold": 2.387790642870201e-16,
+        "Mosaic_Virus": 6.332249051840306e-19,
+        "Septoria_Leaf_Spot": 2.1029024972023488e-19,
+        "Spider_Mites": 7.294539321536786e-14,
+        "Target_Spot": 2.164461745414719e-14,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 2,
+      "true_label_name": "Healthy",
+      "predicted_label": 2,
+      "predicted_label_name": "Healthy",
+      "confidence": 0.9999606609344482,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 3.9380953239742666e-05,
+        "Early_Blight": 1.1444033221064132e-10,
+        "Healthy": 1.325155438826409e-18,
+        "Late_Blight": 2.9416039916407843e-12,
+        "Leaf_Mold": 8.402778256186294e-14,
+        "Mosaic_Virus": 4.628993234492981e-16,
+        "Septoria_Leaf_Spot": 5.792834609349637e-14,
+        "Spider_Mites": 1.5740174788558825e-11,
+        "Target_Spot": 5.217858436989964e-11,
+        "Yellow_Leaf_Curl_Virus": 0.9999606609344482
+      }
+    },
+    {
+      "true_label": 0,
+      "true_label_name": "Bacterial_Spot",
+      "predicted_label": 0,
+      "predicted_label_name": "Bacterial_Spot",
+      "confidence": 0.9838392734527588,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 6.242853487492539e-07,
+        "Early_Blight": 3.580551037885016e-07,
+        "Healthy": 1.5358936344966878e-09,
+        "Late_Blight": 1.6656220225286233e-07,
+        "Leaf_Mold": 3.4350493933743564e-06,
+        "Mosaic_Virus": 4.890554919256829e-06,
+        "Septoria_Leaf_Spot": 5.675214609368595e-08,
+        "Spider_Mites": 0.014842614531517029,
+        "Target_Spot": 0.0013086037943139672,
+        "Yellow_Leaf_Curl_Virus": 0.9838392734527588
+      }
+    },
+    {
+      "true_label": 0,
+      "true_label_name": "Bacterial_Spot",
+      "predicted_label": 0,
+      "predicted_label_name": "Bacterial_Spot",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.3354657083216649e-15,
+        "Early_Blight": 8.283650028413056e-17,
+        "Healthy": 3.6368274030712063e-29,
+        "Late_Blight": 3.9128251177627165e-19,
+        "Leaf_Mold": 9.822719216788164e-16,
+        "Mosaic_Virus": 8.546823826869457e-18,
+        "Septoria_Leaf_Spot": 2.6888325236830475e-19,
+        "Spider_Mites": 4.467897579685243e-11,
+        "Target_Spot": 5.710632162460316e-13,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 3,
+      "true_label_name": "Late_Blight",
+      "predicted_label": 3,
+      "predicted_label_name": "Late_Blight",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 2.7691984261224434e-09,
+        "Early_Blight": 3.0221446872813473e-11,
+        "Healthy": 3.113858963819625e-18,
+        "Late_Blight": 3.388696441508632e-12,
+        "Leaf_Mold": 1.6975166827748467e-09,
+        "Mosaic_Virus": 5.356016845314837e-12,
+        "Septoria_Leaf_Spot": 5.5830347289731463e-11,
+        "Spider_Mites": 3.826828631758872e-09,
+        "Target_Spot": 3.691037253616969e-09,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 0,
+      "true_label_name": "Bacterial_Spot",
+      "predicted_label": 0,
+      "predicted_label_name": "Bacterial_Spot",
+      "confidence": 0.9989803433418274,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 0.0010195877403020859,
+        "Early_Blight": 1.2565385398843887e-09,
+        "Healthy": 7.342906596890901e-15,
+        "Late_Blight": 7.731760787166309e-10,
+        "Leaf_Mold": 9.293442751467929e-12,
+        "Mosaic_Virus": 8.148551820276462e-14,
+        "Septoria_Leaf_Spot": 1.760795675931348e-11,
+        "Spider_Mites": 9.16900610992144e-10,
+        "Target_Spot": 6.678878339272387e-09,
+        "Yellow_Leaf_Curl_Virus": 0.9989803433418274
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 0.9999979734420776,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 2.1529185545432483e-08,
+        "Early_Blight": 2.542492216761616e-09,
+        "Healthy": 1.0870202775707991e-16,
+        "Late_Blight": 1.3972901724557119e-09,
+        "Leaf_Mold": 2.8342836966288587e-09,
+        "Mosaic_Virus": 3.548000088171577e-11,
+        "Septoria_Leaf_Spot": 1.1013883555177628e-10,
+        "Spider_Mites": 1.889352120088006e-06,
+        "Target_Spot": 1.3625809458517324e-07,
+        "Yellow_Leaf_Curl_Virus": 0.9999979734420776
+      }
+    },
+    {
+      "true_label": 1,
+      "true_label_name": "Early_Blight",
+      "predicted_label": 1,
+      "predicted_label_name": "Early_Blight",
+      "confidence": 0.9999984502792358,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.5634810779374675e-06,
+        "Early_Blight": 5.7136552433778576e-12,
+        "Healthy": 3.9259759970326026e-19,
+        "Late_Blight": 4.4111025596094144e-13,
+        "Leaf_Mold": 1.0896924638667538e-12,
+        "Mosaic_Virus": 9.02906628586983e-16,
+        "Septoria_Leaf_Spot": 3.631833982858934e-12,
+        "Spider_Mites": 5.029745066623126e-13,
+        "Target_Spot": 3.0824693492137456e-11,
+        "Yellow_Leaf_Curl_Virus": 0.9999984502792358
+      }
+    },
+    {
+      "true_label": 2,
+      "true_label_name": "Healthy",
+      "predicted_label": 2,
+      "predicted_label_name": "Healthy",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 3.420502636686251e-08,
+        "Early_Blight": 1.3439851657051486e-15,
+        "Healthy": 3.541105474325351e-22,
+        "Late_Blight": 4.2762926857232303e-16,
+        "Leaf_Mold": 2.7686616545810573e-15,
+        "Mosaic_Virus": 3.5560593795328166e-17,
+        "Septoria_Leaf_Spot": 2.7086857062874614e-12,
+        "Spider_Mites": 1.3724934817133105e-12,
+        "Target_Spot": 5.401857780529262e-11,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 0.999653697013855,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 0.00034634966868907213,
+        "Early_Blight": 7.918528333039632e-11,
+        "Healthy": 4.407981791387918e-18,
+        "Late_Blight": 9.812786000429341e-12,
+        "Leaf_Mold": 5.824987302401052e-14,
+        "Mosaic_Virus": 1.0050523036949594e-16,
+        "Septoria_Leaf_Spot": 1.594043907288123e-13,
+        "Spider_Mites": 4.0755697428007664e-12,
+        "Target_Spot": 6.128237500790945e-11,
+        "Yellow_Leaf_Curl_Virus": 0.999653697013855
+      }
+    },
+    {
+      "true_label": 8,
+      "true_label_name": "Target_Spot",
+      "predicted_label": 8,
+      "predicted_label_name": "Target_Spot",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 3.44618972247801e-10,
+        "Early_Blight": 2.826494247669595e-20,
+        "Healthy": 2.5237163825228715e-36,
+        "Late_Blight": 3.406951804560684e-24,
+        "Leaf_Mold": 3.6982076570673025e-26,
+        "Mosaic_Virus": 9.435609106204418e-32,
+        "Septoria_Leaf_Spot": 1.0624476316164767e-27,
+        "Spider_Mites": 3.018635260623912e-23,
+        "Target_Spot": 4.073052179417901e-22,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 6,
+      "true_label_name": "Septoria_Leaf_Spot",
+      "predicted_label": 6,
+      "predicted_label_name": "Septoria_Leaf_Spot",
+      "confidence": 0.9999998807907104,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.629533699087915e-07,
+        "Early_Blight": 1.9777703780254896e-12,
+        "Healthy": 2.274987089881692e-25,
+        "Late_Blight": 3.615370399974796e-15,
+        "Leaf_Mold": 6.5134004686160765e-18,
+        "Mosaic_Virus": 1.0869658119926125e-21,
+        "Septoria_Leaf_Spot": 2.393210015010287e-21,
+        "Spider_Mites": 5.1280018371815256e-15,
+        "Target_Spot": 1.5366128457676301e-15,
+        "Yellow_Leaf_Curl_Virus": 0.9999998807907104
+      }
+    },
+    {
+      "true_label": 0,
+      "true_label_name": "Bacterial_Spot",
+      "predicted_label": 0,
+      "predicted_label_name": "Bacterial_Spot",
+      "confidence": 0.9999840259552002,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 3.717403629366345e-08,
+        "Early_Blight": 2.9555052849516983e-10,
+        "Healthy": 1.3245723352243825e-14,
+        "Late_Blight": 4.760906668899167e-10,
+        "Leaf_Mold": 1.1587300896565011e-08,
+        "Mosaic_Virus": 2.6254700635774952e-09,
+        "Septoria_Leaf_Spot": 1.6574621675147228e-09,
+        "Spider_Mites": 1.4584014024876524e-05,
+        "Target_Spot": 1.4153865777188912e-06,
+        "Yellow_Leaf_Curl_Virus": 0.9999840259552002
+      }
+    },
+    {
+      "true_label": 2,
+      "true_label_name": "Healthy",
+      "predicted_label": 2,
+      "predicted_label_name": "Healthy",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 6.347080638846592e-09,
+        "Early_Blight": 4.1975889994785853e-13,
+        "Healthy": 7.130361373530405e-25,
+        "Late_Blight": 2.48963616920634e-14,
+        "Leaf_Mold": 8.684199501460426e-18,
+        "Mosaic_Virus": 2.251408042031584e-19,
+        "Septoria_Leaf_Spot": 3.637011823770625e-19,
+        "Spider_Mites": 7.591460283746382e-14,
+        "Target_Spot": 1.2542625019650554e-14,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 3,
+      "true_label_name": "Late_Blight",
+      "predicted_label": 3,
+      "predicted_label_name": "Late_Blight",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.279693712108454e-10,
+        "Early_Blight": 7.864465334217724e-16,
+        "Healthy": 1.2779542042348525e-26,
+        "Late_Blight": 1.4669555163982864e-17,
+        "Leaf_Mold": 2.5336192761408495e-16,
+        "Mosaic_Virus": 1.530643439801679e-18,
+        "Septoria_Leaf_Spot": 2.708509345133997e-16,
+        "Spider_Mites": 1.6361163048287872e-14,
+        "Target_Spot": 6.383986357128349e-14,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 1,
+      "true_label_name": "Early_Blight",
+      "predicted_label": 1,
+      "predicted_label_name": "Early_Blight",
+      "confidence": 0.9999998807907104,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 6.421802822842437e-08,
+        "Early_Blight": 1.9482025793367375e-17,
+        "Healthy": 1.2419456295194694e-29,
+        "Late_Blight": 4.495580903266228e-20,
+        "Leaf_Mold": 1.707982435862207e-22,
+        "Mosaic_Virus": 1.0207800024545628e-26,
+        "Septoria_Leaf_Spot": 1.6613929418885782e-22,
+        "Spider_Mites": 3.3833364679098666e-19,
+        "Target_Spot": 7.090540925606575e-18,
+        "Yellow_Leaf_Curl_Virus": 0.9999998807907104
+      }
+    },
+    {
+      "true_label": 6,
+      "true_label_name": "Septoria_Leaf_Spot",
+      "predicted_label": 6,
+      "predicted_label_name": "Septoria_Leaf_Spot",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 7.941876323247499e-11,
+        "Early_Blight": 2.535344167681891e-13,
+        "Healthy": 3.7954409512635176e-24,
+        "Late_Blight": 2.383096703913873e-15,
+        "Leaf_Mold": 6.488271833866854e-13,
+        "Mosaic_Virus": 5.885070038679407e-16,
+        "Septoria_Leaf_Spot": 1.4067612973491829e-14,
+        "Spider_Mites": 7.992717598881427e-12,
+        "Target_Spot": 7.464768386755694e-12,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.1507911810981764e-11,
+        "Early_Blight": 9.90263592832866e-15,
+        "Healthy": 2.5715256233958334e-24,
+        "Late_Blight": 2.025239630319475e-16,
+        "Leaf_Mold": 8.64914016058746e-14,
+        "Mosaic_Virus": 1.1200025493967995e-15,
+        "Septoria_Leaf_Spot": 1.4335116142630104e-14,
+        "Spider_Mites": 4.689455421202915e-12,
+        "Target_Spot": 5.7791072274882005e-12,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 6,
+      "true_label_name": "Septoria_Leaf_Spot",
+      "predicted_label": 6,
+      "predicted_label_name": "Septoria_Leaf_Spot",
+      "confidence": 0.8202713131904602,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 4.4268226417898404e-08,
+        "Early_Blight": 5.245461807135143e-07,
+        "Healthy": 5.697520233383102e-10,
+        "Late_Blight": 2.637476654854254e-06,
+        "Leaf_Mold": 4.084349711774848e-06,
+        "Mosaic_Virus": 3.8825692172395065e-07,
+        "Septoria_Leaf_Spot": 1.4230405742665653e-09,
+        "Spider_Mites": 0.8202713131904602,
+        "Target_Spot": 0.0019014696590602398,
+        "Yellow_Leaf_Curl_Virus": 0.17781946063041687
+      }
+    },
+    {
+      "true_label": 6,
+      "true_label_name": "Septoria_Leaf_Spot",
+      "predicted_label": 6,
+      "predicted_label_name": "Septoria_Leaf_Spot",
+      "confidence": 0.999961256980896,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 3.870020736940205e-05,
+        "Early_Blight": 2.6021538257481325e-09,
+        "Healthy": 1.6526173960258956e-16,
+        "Late_Blight": 8.479885543755117e-11,
+        "Leaf_Mold": 1.9521885497031377e-10,
+        "Mosaic_Virus": 1.1141479720148256e-13,
+        "Septoria_Leaf_Spot": 7.58522133992301e-09,
+        "Spider_Mites": 1.4981266227565015e-09,
+        "Target_Spot": 6.740686231410109e-09,
+        "Yellow_Leaf_Curl_Virus": 0.999961256980896
+      }
+    },
+    {
+      "true_label": 0,
+      "true_label_name": "Bacterial_Spot",
+      "predicted_label": 0,
+      "predicted_label_name": "Bacterial_Spot",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 3.509430295195806e-14,
+        "Early_Blight": 3.068184245169568e-23,
+        "Healthy": 0.0,
+        "Late_Blight": 1.0497262364806372e-25,
+        "Leaf_Mold": 8.941416730379456e-28,
+        "Mosaic_Virus": 2.567322544229794e-30,
+        "Septoria_Leaf_Spot": 5.629673301893691e-28,
+        "Spider_Mites": 1.8700790892799585e-22,
+        "Target_Spot": 9.667231142235608e-22,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.411147976249083e-09,
+        "Early_Blight": 1.812983893998286e-16,
+        "Healthy": 2.0484604963440684e-27,
+        "Late_Blight": 7.54404186925816e-18,
+        "Leaf_Mold": 2.443387304724462e-18,
+        "Mosaic_Virus": 1.088908151624335e-21,
+        "Septoria_Leaf_Spot": 6.090802268866437e-19,
+        "Spider_Mites": 3.3097468306826964e-17,
+        "Target_Spot": 4.1394158672160796e-16,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 0.9894161820411682,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 0.010580094531178474,
+        "Early_Blight": 4.133323727728566e-07,
+        "Healthy": 9.092414321454356e-11,
+        "Late_Blight": 2.9041698326182086e-06,
+        "Leaf_Mold": 1.4079473142913912e-09,
+        "Mosaic_Virus": 3.0743036588676276e-11,
+        "Septoria_Leaf_Spot": 1.8983810079475916e-08,
+        "Spider_Mites": 8.676106233451719e-08,
+        "Target_Spot": 2.1686011564270302e-07,
+        "Yellow_Leaf_Curl_Virus": 0.9894161820411682
+      }
+    },
+    {
+      "true_label": 0,
+      "true_label_name": "Bacterial_Spot",
+      "predicted_label": 0,
+      "predicted_label_name": "Bacterial_Spot",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 4.146111232117278e-11,
+        "Early_Blight": 3.3703565654498446e-13,
+        "Healthy": 5.169778169804917e-23,
+        "Late_Blight": 1.275132546752454e-14,
+        "Leaf_Mold": 4.158239778982026e-13,
+        "Mosaic_Virus": 8.081123762510283e-15,
+        "Septoria_Leaf_Spot": 1.3290881219760794e-14,
+        "Spider_Mites": 9.288000056562051e-12,
+        "Target_Spot": 1.4737347626969655e-12,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 7,
+      "true_label_name": "Spider_Mites",
+      "predicted_label": 7,
+      "predicted_label_name": "Spider_Mites",
+      "confidence": 0.5800468325614929,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 0.4198797345161438,
+        "Early_Blight": 1.5909394051050185e-06,
+        "Healthy": 1.6046645612277644e-07,
+        "Late_Blight": 1.6005275028874166e-05,
+        "Leaf_Mold": 7.687042113957432e-08,
+        "Mosaic_Virus": 9.106857490337461e-10,
+        "Septoria_Leaf_Spot": 3.981272311648354e-05,
+        "Spider_Mites": 1.597373284312198e-06,
+        "Target_Spot": 1.4253873814595863e-05,
+        "Yellow_Leaf_Curl_Virus": 0.5800468325614929
+      }
+    },
+    {
+      "true_label": 7,
+      "true_label_name": "Spider_Mites",
+      "predicted_label": 7,
+      "predicted_label_name": "Spider_Mites",
+      "confidence": 0.9946098327636719,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 0.00042527145706117153,
+        "Early_Blight": 1.405360580974957e-05,
+        "Healthy": 4.389352881162267e-08,
+        "Late_Blight": 2.7900027816940565e-06,
+        "Leaf_Mold": 1.5444187738467008e-05,
+        "Mosaic_Virus": 7.957974048622418e-06,
+        "Septoria_Leaf_Spot": 2.0960178517270833e-06,
+        "Spider_Mites": 0.00240137055516243,
+        "Target_Spot": 0.002521045506000519,
+        "Yellow_Leaf_Curl_Virus": 0.9946098327636719
+      }
+    },
+    {
+      "true_label": 2,
+      "true_label_name": "Healthy",
+      "predicted_label": 2,
+      "predicted_label_name": "Healthy",
+      "confidence": 0.9999995231628418,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 5.102448312754859e-07,
+        "Early_Blight": 2.1539555891941092e-13,
+        "Healthy": 5.896261949983931e-22,
+        "Late_Blight": 8.458125421838963e-15,
+        "Leaf_Mold": 3.4451686159930536e-14,
+        "Mosaic_Virus": 1.8568825014553733e-17,
+        "Septoria_Leaf_Spot": 1.9804195176137407e-12,
+        "Spider_Mites": 3.2780956768507785e-12,
+        "Target_Spot": 5.051897788987958e-11,
+        "Yellow_Leaf_Curl_Virus": 0.9999995231628418
+      }
+    },
+    {
+      "true_label": 7,
+      "true_label_name": "Spider_Mites",
+      "predicted_label": 7,
+      "predicted_label_name": "Spider_Mites",
+      "confidence": 0.999998927116394,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 1.015581688079692e-06,
+        "Early_Blight": 6.3623511874796954e-15,
+        "Healthy": 1.9293632149581774e-25,
+        "Late_Blight": 8.007094432879017e-17,
+        "Leaf_Mold": 1.7039163231344001e-19,
+        "Mosaic_Virus": 6.18580230119263e-23,
+        "Septoria_Leaf_Spot": 7.417585495740773e-19,
+        "Spider_Mites": 2.4737832805600297e-16,
+        "Target_Spot": 2.262680806066307e-15,
+        "Yellow_Leaf_Curl_Virus": 0.999998927116394
+      }
+    },
+    {
+      "true_label": 0,
+      "true_label_name": "Bacterial_Spot",
+      "predicted_label": 0,
+      "predicted_label_name": "Bacterial_Spot",
+      "confidence": 0.9999992847442627,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 2.069233950852123e-10,
+        "Early_Blight": 6.095605248855607e-13,
+        "Healthy": 2.2901958334239024e-19,
+        "Late_Blight": 1.4317522861739818e-12,
+        "Leaf_Mold": 2.4165912326790107e-11,
+        "Mosaic_Virus": 5.423290397495173e-13,
+        "Septoria_Leaf_Spot": 5.982735465891176e-13,
+        "Spider_Mites": 7.604602956234885e-07,
+        "Target_Spot": 1.3004713750319752e-08,
+        "Yellow_Leaf_Curl_Virus": 0.9999992847442627
+      }
+    },
+    {
+      "true_label": 0,
+      "true_label_name": "Bacterial_Spot",
+      "predicted_label": 0,
+      "predicted_label_name": "Bacterial_Spot",
+      "confidence": 0.9437199831008911,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 0.05612506344914436,
+        "Early_Blight": 0.00015320921374950558,
+        "Healthy": 1.0432759101064448e-09,
+        "Late_Blight": 7.582718808407662e-07,
+        "Leaf_Mold": 5.925078738755474e-08,
+        "Mosaic_Virus": 4.9210299030155724e-11,
+        "Septoria_Leaf_Spot": 7.635073906442358e-09,
+        "Spider_Mites": 4.6549945409424254e-07,
+        "Target_Spot": 4.5923852098894713e-07,
+        "Yellow_Leaf_Curl_Virus": 0.9437199831008911
+      }
+    },
+    {
+      "true_label": 7,
+      "true_label_name": "Spider_Mites",
+      "predicted_label": 7,
+      "predicted_label_name": "Spider_Mites",
+      "confidence": 1.0,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 2.512099415204888e-13,
+        "Early_Blight": 5.66217407754765e-20,
+        "Healthy": 5.853777880599992e-28,
+        "Late_Blight": 4.242520181374688e-20,
+        "Leaf_Mold": 9.548867939374357e-18,
+        "Mosaic_Virus": 6.317892815321565e-19,
+        "Septoria_Leaf_Spot": 1.6165176988468645e-15,
+        "Spider_Mites": 1.1479854474796478e-14,
+        "Target_Spot": 1.1151712555777446e-13,
+        "Yellow_Leaf_Curl_Virus": 1.0
+      }
+    },
+    {
+      "true_label": 8,
+      "true_label_name": "Target_Spot",
+      "predicted_label": 8,
+      "predicted_label_name": "Target_Spot",
+      "confidence": 0.9999573230743408,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 4.2653773562051356e-05,
+        "Early_Blight": 3.786778876579966e-11,
+        "Healthy": 5.520638046367057e-19,
+        "Late_Blight": 8.835587426633817e-13,
+        "Leaf_Mold": 3.1848496415002106e-14,
+        "Mosaic_Virus": 2.6826248123592938e-17,
+        "Septoria_Leaf_Spot": 7.936977389612441e-15,
+        "Spider_Mites": 1.464500829634341e-12,
+        "Target_Spot": 7.0755350363438385e-12,
+        "Yellow_Leaf_Curl_Virus": 0.9999573230743408
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 0.999969482421875,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 2.8207528885104693e-05,
+        "Early_Blight": 3.162753046126454e-07,
+        "Healthy": 3.7677346865268996e-14,
+        "Late_Blight": 3.4024056905224143e-09,
+        "Leaf_Mold": 1.0147328310949888e-08,
+        "Mosaic_Virus": 5.345355824637466e-10,
+        "Septoria_Leaf_Spot": 1.24866519901623e-10,
+        "Spider_Mites": 1.3191000789447571e-06,
+        "Target_Spot": 6.122357376625587e-07,
+        "Yellow_Leaf_Curl_Virus": 0.999969482421875
+      }
+    },
+    {
+      "true_label": 6,
+      "true_label_name": "Septoria_Leaf_Spot",
+      "predicted_label": 6,
+      "predicted_label_name": "Septoria_Leaf_Spot",
+      "confidence": 0.9999960660934448,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 3.9022634155116975e-06,
+        "Early_Blight": 2.2972489795852757e-12,
+        "Healthy": 3.547209787749418e-18,
+        "Late_Blight": 1.5900592474638042e-12,
+        "Leaf_Mold": 6.744234890606465e-14,
+        "Mosaic_Virus": 4.4040343068338025e-15,
+        "Septoria_Leaf_Spot": 1.57621691306703e-13,
+        "Spider_Mites": 6.763851978508484e-11,
+        "Target_Spot": 2.7880261987967003e-10,
+        "Yellow_Leaf_Curl_Virus": 0.9999960660934448
+      }
+    },
+    {
+      "true_label": 9,
+      "true_label_name": "Yellow_Leaf_Curl_Virus",
+      "predicted_label": 9,
+      "predicted_label_name": "Yellow_Leaf_Curl_Virus",
+      "confidence": 0.9993302822113037,
+      "is_correct": true,
+      "probabilities": {
+        "Bacterial_Spot": 0.0006696031196042895,
+        "Early_Blight": 2.0422254110030735e-08,
+        "Healthy": 6.743717861695461e-14,
+        "Late_Blight": 5.672631808728568e-10,
+        "Leaf_Mold": 9.108167553506519e-10,
+        "Mosaic_Virus": 5.4284697396933534e-12,
+        "Septoria_Leaf_Spot": 5.03632779924601e-09,
+        "Spider_Mites": 4.575981815690966e-09,
+        "Target_Spot": 8.10710218956956e-08,
+        "Yellow_Leaf_Curl_Virus": 0.9993302822113037
+      }
+    }
+  ]
+}

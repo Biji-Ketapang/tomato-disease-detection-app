@@ -1,0 +1,93 @@
+{
+  "classification_insights": {
+    "overall_performance": {
+      "summary": "Model menunjukkan performa yang sangat baik secara keseluruhan dengan beberapa variasi antar kelas penyakit",
+      "key_observations": [
+        "Akurasi tertinggi pada kelas 'Healthy' (99.70%) menunjukkan model sangat handal mengidentifikasi daun sehat",
+        "Kelas 'Early_Blight' memiliki performa terendah dengan error rate tertinggi (10.66%)",
+        "Perbedaan signifikan antara precision dan recall pada beberapa kelas mengindikasikan ketidakseimbangan prediksi"
+      ]
+    },
+    "best_performing_classes": {
+      "ranking": [
+        {
+          "class": "Healthy",
+          "reason": "F1-score tertinggi (0.994), precision dan recall hampir sempurna",
+          "error_rate": "Hanya 0.30%"
+        },
+        {
+          "class": "Yellow_Leaf_Curl_Virus",
+          "reason": "F1-score 0.981 dengan support terbesar (1074 samples), konsisten antara precision dan recall",
+          "error_rate": "2.42%"
+        },
+        {
+          "class": "Bacterial_Spot",
+          "reason": "Recall sangat tinggi (0.981), mendeteksi hampir semua kasus aktual",
+          "error_rate": "1.92%", 
+          "note": "Precision lebih rendah menunjukkan beberapa false positives"
+        }
+      ]
+    },
+    "classes_needing_improvement": {
+      "priority_list": [
+        {
+          "class": "Early_Blight",
+          "issues": [
+            "F1-score terendah (0.840)",
+            "Error rate tertinggi (10.66%)",
+            "Precision relatif rendah (0.793) menunjukkan banyak false positives"
+          ],
+          "recommendation": "Perlu lebih banyak data training atau augmentasi data"
+        },
+        {
+          "class": "Target_Spot",
+          "issues": [
+            "Recall lebih rendah dari precision (0.889 vs 0.916)",
+            "Error rate 11.11% termasuk tinggi",
+            "F1-score 0.902 masih ada ruang perbaikan"
+          ]
+        },
+        {
+          "class": "Late_Blight",
+          "issues": [
+            "Gap besar antara precision (0.985) dan recall (0.853)",
+            "Model sangat yakin saat benar (precision tinggi) tetapi melewatkan banyak kasus aktual",
+            "Error rate 14.73% cukup mengkhawatirkan"
+          ]
+        }
+      ]
+    },
+    "data_distribution_insights": {
+      "note": "Support menunjukkan ketidakseimbangan jumlah sampel antar kelas",
+      "class_imbalance": {
+        "largest_class": "Yellow_Leaf_Curl_Virus (1074 samples)",
+        "smallest_class": "Mosaic_Virus (72 samples)",
+        "concern": "Meski Mosaic_Virus memiliki precision tinggi (0.985), jumlah sampel yang kecil mungkin membuat performa tidak stabil pada data baru"
+      },
+      "recommendation": "Pertimbangkan teknik handling class imbalance untuk kelas dengan sampel sedikit"
+    },
+    "precision_recall_analysis": {
+      "high_precision_classes": [
+        "Healthy (0.991)",
+        "Late_Blight (0.985)",
+        "Yellow_Leaf_Curl_Virus (0.986)",
+        "Mosaic_Virus (0.985)"
+      ],
+      "interpretation_1": "Kelas-kelas ini ketika diprediksi positif, kemungkinan besar benar (few false positives)",
+      "high_recall_classes": [
+        "Healthy (0.997)",
+        "Bacterial_Spot (0.981)",
+        "Spider_Mites (0.962)",
+        "Yellow_Leaf_Curl_Virus (0.976)"
+      ],
+      "interpretation_2": "Kelas-kelas ini berhasil mendeteksi sebagian besar kasus aktual (few false negatives)"
+    },
+    "practical_recommendations": [
+      "Fokus perbaikan pada Early_Blight sebagai prioritas utama",
+      "Evaluasi model pada data baru untuk kelas dengan sedikit sampel (Mosaic_Virus)",
+      "Pertimbangkan threshold adjustment untuk kelas dengan gap precision-recall besar (Late_Blight)",
+      "Model sangat dapat diandalkan untuk deteksi daun sehat dan Yellow_Leaf_Curl_Virus",
+      "Monitoring khusus diperlukan untuk Early_Blight dan Late_Blight dalam produksi"
+    ]
+  }
+}

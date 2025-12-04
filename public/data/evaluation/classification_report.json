@@ -1,0 +1,96 @@
+{
+  "report": {
+    "Bacterial_Spot": {
+      "precision": 0.8872017353579176,
+      "recall": 0.9808153477218226,
+      "f1-score": 0.9316628701594533,
+      "support": 417.0
+    },
+    "Early_Blight": {
+      "precision": 0.7927927927927928,
+      "recall": 0.8934010152284264,
+      "f1-score": 0.8400954653937948,
+      "support": 197.0
+    },
+    "Healthy": {
+      "precision": 0.990990990990991,
+      "recall": 0.9969788519637462,
+      "f1-score": 0.9939759036144579,
+      "support": 331.0
+    },
+    "Late_Blight": {
+      "precision": 0.9850746268656716,
+      "recall": 0.8527131782945736,
+      "f1-score": 0.9141274238227147,
+      "support": 387.0
+    },
+    "Leaf_Mold": {
+      "precision": 0.978021978021978,
+      "recall": 0.9128205128205128,
+      "f1-score": 0.9442970822281167,
+      "support": 195.0
+    },
+    "Mosaic_Virus": {
+      "precision": 0.9848484848484849,
+      "recall": 0.9027777777777778,
+      "f1-score": 0.9420289855072463,
+      "support": 72.0
+    },
+    "Septoria_Leaf_Spot": {
+      "precision": 0.9461077844311377,
+      "recall": 0.9132947976878613,
+      "f1-score": 0.9294117647058824,
+      "support": 346.0
+    },
+    "Spider_Mites": {
+      "precision": 0.8823529411764706,
+      "recall": 0.9620991253644315,
+      "f1-score": 0.9205020920502092,
+      "support": 343.0
+    },
+    "Target_Spot": {
+      "precision": 0.916030534351145,
+      "recall": 0.8888888888888888,
+      "f1-score": 0.9022556390977443,
+      "support": 270.0
+    },
+    "Yellow_Leaf_Curl_Virus": {
+      "precision": 0.9858889934148636,
+      "recall": 0.9757914338919925,
+      "f1-score": 0.9808142255498362,
+      "support": 1074.0
+    },
+    "accuracy": 0.9421806167400881,
+    "macro avg": {
+      "precision": 0.9349310862251453,
+      "recall": 0.9279580929640033,
+      "f1-score": 0.9299171452129457,
+      "support": 3632.0
+    },
+    "weighted avg": {
+      "precision": 0.945259348706475,
+      "recall": 0.9421806167400881,
+      "f1-score": 0.9424702003315589,
+      "support": 3632.0
+    }
+  },
+  "class_names": [
+    "Bacterial_Spot",
+    "Early_Blight",
+    "Healthy",
+    "Late_Blight",
+    "Leaf_Mold",
+    "Mosaic_Virus",
+    "Septoria_Leaf_Spot",
+    "Spider_Mites",
+    "Target_Spot",
+    "Yellow_Leaf_Curl_Virus"
+  ],
+  "title": "Classification Report",
+  "explanation": {
+    "precision": "Dari semua yang diprediksi sebagai kelas X, berapa persen yang benar",
+    "recall": "Dari semua yang sebenarnya kelas X, berapa persen yang terdeteksi",
+    "f1_score": "Rata-rata harmonik precision dan recall",
+    "support": "Jumlah sampel aktual untuk setiap kelas"
+  }
+}
